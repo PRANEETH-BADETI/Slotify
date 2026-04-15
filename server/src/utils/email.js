@@ -7,17 +7,15 @@ async function getTransporter() {
   if (transporter) return transporter;
 
   if (process.env.SMTP_USER && process.env.SMTP_PASS) {
-    // Use real SMTP if credentials exist (e.g., Gmail App Password)
-    transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: process.env.SMTP_PORT || 587,
-      secure: false, 
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
-  } else {
+      // Use real SMTP if credentials exist (e.g., Gmail App Password)
+      transporter = nodemailer.createTransport({
+        service: "gmail", // This automatically handles the correct Google host/port/IPv4 settings
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+      });
+    } else {
     // Fallback: Generate an Ethereal test account if no .env config exists
     console.log("📧 No SMTP credentials found. Generating Ethereal test account...");
     const testAccount = await nodemailer.createTestAccount();

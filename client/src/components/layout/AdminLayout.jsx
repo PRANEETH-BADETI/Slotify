@@ -136,7 +136,7 @@ export function AdminLayout() {
           {!collapsed ? (
             <Link to="/event-types" className="admin-layout__logo-link">
               <CalendlyLogo />
-              <span className="admin-layout__logo-text">Calendly</span>
+              <span className="admin-layout__logo-text">Slotify</span>
             </Link>
           ) : (
             <CalendlyLogo />

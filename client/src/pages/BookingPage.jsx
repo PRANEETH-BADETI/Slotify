@@ -217,13 +217,13 @@ export function BookingPage() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           <CalendlyMark />
-          <span style={{ fontSize: "16px", fontWeight: 700, color: "#006BFF" }}>Calendly</span>
+          <span style={{ fontSize: "16px", fontWeight: 700, color: "#006BFF" }}>Slotify</span>
         </div>
         <a
           href="https://calendly.com"
           style={{ fontSize: "12px", color: "#6b7280", textDecoration: "none" }}
         >
-          Powered by Calendly
+          Powered by Slotify
         </a>
       </div>
 

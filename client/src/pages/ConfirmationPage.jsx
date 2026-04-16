@@ -63,9 +63,9 @@ export function ConfirmationPage() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
           <CalendlyMark />
-          <span style={{ fontSize: "16px", fontWeight: "700", color: "#006BFF" }}>Calendly</span>
+          <span style={{ fontSize: "16px", fontWeight: "700", color: "#006BFF" }}>Slotify</span>
         </div>
-        <span style={{ fontSize: "12px", color: "#9ca3af" }}>Powered by Calendly</span>
+        <span style={{ fontSize: "12px", color: "#9ca3af" }}>Powered by Slotify</span>
       </div>
 
       {/* Content */}
@@ -258,7 +258,7 @@ export function ConfirmationPage() {
       >
         <p style={{ fontSize: "12px", color: "#9ca3af" }}>
           Powered by{" "}
-          <span style={{ color: "#006BFF", fontWeight: "500" }}>Calendly</span>
+          <span style={{ color: "#006BFF", fontWeight: "500" }}>Slotify</span>
           {" · "}
           <span style={{ color: "#9ca3af", cursor: "pointer" }}>Cookie settings</span>
           {" · "}

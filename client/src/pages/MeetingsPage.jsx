@@ -174,7 +174,7 @@ export function MeetingsPage() {
       <div className="meetings-page__meta">
         <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
           <button type="button" style={dropdownButtonStyle}>
-            My Calendly
+            My Slotify
             <ChevronDown size={15} />
           </button>
 

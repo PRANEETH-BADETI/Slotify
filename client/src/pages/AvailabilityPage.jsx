@@ -252,7 +252,7 @@ export function AvailabilityPage() {
                   Holidays
                 </h3>
                 <p style={{ margin: "0 0 18px", fontSize: "14px", color: "#45607f" }}>
-                  Calendly will automatically mark you as unavailable for the selected holidays.
+                  Slotify will automatically mark you as unavailable for the selected holidays.
                 </p>
 
                 <div className="availability-holidays">
